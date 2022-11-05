@@ -32,11 +32,6 @@ header{
     background-color: #FA7070;
 }
 
-header p {
-    color: #FFFFFF;
-    font-size: 3.5rem;
-    grid-area: header;
-}
 
 .header{
     background-image: url("../img/NombreParloteFrancofonia.png");
@@ -51,27 +46,14 @@ header p {
 }
 
 header p{
-    height: 10rem;
-    width: 200rem;
-    right: 0;
-    left: 0;
-    bottom: 0;
     text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
     text-shadow: 4px 3px #41463d;
 }
 
-/* nav {
-    background-color: #FBF2CF;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    grid-area: nav;
-}*/
+.navbar{
+    position:sticky;
+    top:0;
+}
 
 /* Logo */
 nav div {
@@ -103,21 +85,22 @@ nav img{
 /************************** MAIN **************************/
 /************* MAIN - INDEX *************/
 
+/*
 .sectionForm {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .imgCarousel {
-    height: 700px;
+    height: 60vh;
     object-fit: cover;
 }
-
+/*
 .carousel-item img {
-    width: 50%
-}
+    width: 30%
+}*/
 
 
 /************* MAIN - COMMENTS *************/
@@ -147,7 +130,7 @@ input::placeholder {
 }
 
 .btnForm button:hover{
-    font-size:medium;
+    font-size:large;
 }
 
 /************* MAIN - GALLERY *************/
@@ -186,7 +169,6 @@ footer{
     bottom:0;
     display: flex;
     flex-direction: column;
-    grid-area: footer;
 }
 
 .info div:not(.map){
@@ -195,6 +177,7 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+
 .info img{
     margin-left: 6rem;
     height: 8rem;
@@ -214,15 +197,14 @@ section ul li {
 }
 
 .copyright {
-    margin: auto;
-    height: 1rem;
-    font-size: 1rem;
+    margin: auto;/*
+    font-size: 1.5rem;*/
 }
 
 .map {
     margin-right: 1rem;
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .map img{
