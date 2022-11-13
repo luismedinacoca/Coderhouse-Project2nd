@@ -8,6 +8,9 @@
 #FBF2CF  (amarillo o crema)
 #C6EBC5  (verde claro)
 #FA7070  (naranja)
+
+col-md-4 my-2
+
 */
 
 /* 1rem = 16px */
@@ -20,7 +23,7 @@
 }
 
 html{
-    font-size: 45%;
+    font-size: clamp(0.5rem, 1vh, 2rem);
 }
 
 body{
@@ -67,6 +70,8 @@ nav img{
     margin-left: 6rem;
     height: 8vh;
 }
+
+
 
 /* links */
 .link-value {
@@ -164,7 +169,8 @@ section p {
 /* fondo del footer */
 footer{
     background-color: #A1C298;
-    height: 20vh;
+    height:100%;
+    width: 100vw;
     position: sticky;
     bottom:0;
     display: flex;
@@ -202,7 +208,7 @@ section ul li {
 }
 
 .map {
-    margin-right: 1rem;
+   margin-right: 1rem;
     margin-top: 1rem;
     font-size: 1.5rem;
 }
@@ -215,3 +221,63 @@ section ul li {
     font-weight: bold;
 }
 
+
+
+/* Media Query*/
+
+
+@media screen and (max-width:580px) {
+    section img:first-child, nav img{
+        margin-left: 4rem;
+        height: 6vh;
+    }
+    .navbar-toggler-icon {
+        width: 2rem;
+    }
+
+    section div img:first-child{
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    section .map img:first-child{
+        margin: 0;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    section .map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .copyright{
+        background-color: #A1C298;
+        margin-top: 0;
+    }
+
+   .copyright p:last-child,  img:nth-child(2), .footer-link-value{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:910px) {
+    .menu-link{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section img:first-child, section img:nth-child(2){
+        margin-left: 4rem;
+        height: 6vh;
+    }
+}
