@@ -1,0 +1,96 @@
+@mixin display($type, $justify) {
+    display: flex;
+    flex-direction: $type;
+    justify-content: $justify;
+    align-items: center;
+}
+
+
+footer{
+    background-color: $color_footer;
+    height:25vh;
+    width: 100vw;
+    @include display(column, center);
+
+    .info{
+        @include display(row, space-between);
+        gap: 3.5rem;
+        @media screen and (max-width: 656px) {
+            gap: 1rem;
+        }
+
+        img{
+            margin-left: 0;
+        }
+        
+        div:first-child{
+            @include display(row, flex-start);
+            img {
+                height: 8vh;
+                @media screen and (max-width: 560px){
+                    height: 6vh;
+                }
+                @media screen and (max-width: 530px){
+                    display: none;
+                }
+            }
+            
+        }
+
+        
+
+        ul {
+            list-style-type: none;
+            text-decoration: none;;
+            @include display(row, space-around);
+            li {
+                margin: 1rem;
+                font-size: 1rem;
+                @media screen and (max-width: 612px){
+                    margin: 0.5rem;
+                }
+            }
+
+            @media screen and (max-width: 1000px){
+                display:block;
+            }
+
+            @media screen and (max-width: 560px){
+                @include display(row, center);
+            }
+            @media screen and (max-width: 530px){
+                @include display(column, center);
+            }
+        }
+
+        .map {
+            @include display(column, center);
+            img{
+                height: 10vh;
+            }
+            
+            p{
+                font-size: 1rem;
+            }
+
+            @media screen and (max-width: 560px){
+                display: none;
+            }
+        }
+
+    }
+
+    .copyright{
+        font-size: 1rem;
+        p {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        span{
+            font-weight: bold;
+        } 
+    }
+
+}

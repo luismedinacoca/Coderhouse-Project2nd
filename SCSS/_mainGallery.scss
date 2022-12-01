@@ -1,0 +1,38 @@
+
+main {
+    .blog-content{
+        .blog-content-title{}
+        .divider{}
+    }
+
+    .card-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
+        gap: 1.5rem;
+        .card {
+            width: 100%;
+            height: 528px;
+            border-radius: 20px;
+            background-color: $color_card;
+
+            &__img{
+                height: 80%;
+                border-radius: 20px;
+                background-size: cover;
+                
+                img{
+                    width: 75%;
+                    border-radius: 40px;
+                 }
+            }
+
+            &__info{
+                margin-top: 4.3rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+
+            }
+        }
+    }
+}

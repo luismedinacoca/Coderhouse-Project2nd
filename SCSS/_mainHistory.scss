@@ -1,0 +1,12 @@
+.container-lg{  
+    .display-4{
+        color: $color-fuente;
+        font-weight: 900;
+    }
+    .timeline{
+        @media screen and (max-width: 768px){
+            width: 95%;
+        }
+    }
+}
+

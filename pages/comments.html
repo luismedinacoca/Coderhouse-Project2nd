@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Intercambio frances español tandem lingüístico">
+    <meta name="description" content="Expecting any contact with you and la Parlote in order to be a brand new Parlotero">
     <title>Comments</title>
     <link rel="shortcut icon" href="../img/logo_Parlote-modified.png" type="image/x-icon"><!-- Getting Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3c16664a9f.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3c16664a9f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../SCSS/style.css">
 </head>
 
 <body>
@@ -48,50 +50,44 @@
 
 
     <!-- MAIN SECTION -->
-    <!--<main>-->
 
-    <div class="myForm container-lg mt-5" style="background-color: #C9D6FF;" data-aos="flip-right" data-aos-duration="2950">
+    <main class="myForm container-lg mt-5" style="background-color: #C9D6FF;" data-aos="flip-right" data-aos-duration="2950">
         <h1 class="display-4 text-center fw-bold">Contact me!</h1>
         <form class="row g-3">
             <div class="col-md-12 p-2 m-1">
-                <label for="firstname" class="form-label">First Name</label>
-                <input type="text" class="form-control m-4 p-4 rounded-pill" id="firstname" required>
+                <input type="text" class="form-control m-4 p-4 rounded-pill" id="firstname" placeholder="Prénom" required>
             </div>
 
             <div class="col-md-12 p-3  m-1">
-                <label for="lastname" class="form-label">Last Name</label>
-                <input type="text" class="form-control m-4 p-4 rounded-pill" id="lastname" required>
+                <input type="text" class="form-control m-4 p-4 rounded-pill" id="lastname" placeholder="Nom de famille" required>
             </div>
 
             <div class="col-md-8">
-                <label for="emailInfo" class="form-label">E-mail</label>
                 <input type="email" class="form-control m-4 p-4 rounded-pill" id="emailInfo" required placeholder="example@email.com">
             </div>
 
             <div class="col-md-4">
-                <label for="phoneNumber" class="form-label">Phone Number</label>
                 <input type="email" class="form-control m-4 p-4 rounded-pill" id="phoneNumber" placeholder="+54 (261)987-2468">
             </div>
 
             <div class="col-md-12">
-                <label for="comments" class="form-label">Comments, question?</label>
-                <textarea class="form-control m-3 p-3 rounded-pill" id="comments" rows="3" required></textarea>
+                <textarea class="form-control m-3 p-3 rounded-pill" id="comments" rows="3" placeholder="quelqu'idea or questions" required></textarea>
             </div>
 
             <!-- checkbox inline -->
             <div>
-                <p>Asististe a algún encuentro de La Parlote?</p>
+                <p class="display-6 ">Est-ce que tu a été dans un eventement de la Parlote avant ?</p>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
                         value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
+                    <label class="display-6 form-check-label" for="exampleRadios1">
                         Oui
                     </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
                         value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
+                    <label class="display-6 form-check-label" for="exampleRadios2">
                         Pas encore!
                     </label>
                 </div>
@@ -103,17 +99,8 @@
                 <button type="submit" class="btn btn-primary col-md-4 m-3 p-3 display-6 rounded-pill">Submit</button>
             </div>
         </form>
-    </div>
+    </main>
 
-    
-
-    <section class="additionalComment">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis necessitatibus perferendis sint repellendus
-            dignissimos aut autem qui quos magnam ut, nostrum, officiis repellat esse unde ea ducimus doloribus
-            laudantium velit?
-            Nostrum quaerat modi eius deleniti consequuntur repellendus aut sed quae odio aperiam laboriosam magnam
-            iste, illum ad atque ab ratione velit voluptatibus tempora ex rerum eveniet unde quo esse! Recusandae!</p>
-    </section>
     <!--</main>-->
 
 
@@ -122,19 +109,19 @@
     <footer class="footer">
         <section class="info">
             <div>
-                <img src="../img/logo_Parlote-modified.png" alt="Logo de la Parlote" width="20%">
-                <img src="../img/LaParloteFrancofona2022.png" alt="Logo Parlote 2022" width="45%">
+                <img src="../img/logo_Parlote-modified.png" alt="Logo de la Parlote">
+                <img src="../img/LaParloteFrancofona2022.png" alt="Logo Parlote 2022">
             </div>
 
             <ul class="menu-link">
-                <li class="footer-link-value"><a href=""><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
-                <li class="footer-link-value"><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                <li class="footer-link-value"><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li class="footer-link-value"><a href="http://bit.ly/ParloteWhatsapp"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
+                <li class="footer-link-value"><a href="https://www.instagram.com/laparlote.francofona/?hl=es"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li class="footer-link-value"><a href="https://es-la.facebook.com/laParloteFrancophone/"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
             </ul>
 
             <div class="map">
-                <img src="../img/map-UnionCervecera.png" alt="mapa-union-cervecera">
-                <p>Lugar de los encuentros</p>
+                <a href="https://bit.ly/3ibFWwo" target="_blank" ><img src="../img/map-UnionCervecera.png" alt="mapa-union-cervecera"></a>
+                <p class="text-center">Lugar de los encuentros</p>
             </div>
         </section>
 
@@ -143,7 +130,6 @@
             <p class="copyright-paragraph text-center">Sitio Web creado por <span>Luis Medina Coca</span>.</p>
         </div>
     </footer>
-
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

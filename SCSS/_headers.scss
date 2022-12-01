@@ -1,0 +1,47 @@
+@mixin display($type, $justify) {
+    display: flex;
+    flex-direction: $type;
+    justify-content: $justify;
+    align-items: center;
+}
+
+
+header{
+    background-image: url("../img/NombreParloteFrancofonia.png");
+    background-repeat: y;
+    background-color: $color_header;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+
+    p{
+        text-transform: uppercase;
+        text-shadow: 4px 3px $color_fuente_secundario;
+    }
+}
+
+nav{
+
+    .container-fluid {
+        div{
+            @include display(row, space-between);
+            
+            img{
+                height: 8vh;
+            }
+        }
+
+        .collapse {
+            div {
+                a {
+                    font-size: 1.25rem;
+                    color: $color_fuente;
+                }
+            }
+        }
+    }
+}
